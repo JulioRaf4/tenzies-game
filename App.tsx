@@ -3,7 +3,7 @@ import Die from "./Die";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
 
-// Definindo o tipo para o dado (Die)
+
 type DieType = {
     value: number;
     isHeld: boolean;
@@ -71,7 +71,7 @@ export default function App() {
 
     return (
         <main>
-            {tenzies && <Confetti />}
+            {tenzies && <Confetti width={1920} height={920}/>}
             <h1 className="title">Tenzies</h1>
             <p className="instructions">
                 Roll until all dice are the same. Click each die to freeze it at its current value between rolls.
